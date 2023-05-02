@@ -1,0 +1,54 @@
+.switchingTabs {
+  height: 34px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.switchingTabs .tabItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  position: relative;
+}
+
+.switchingTabs .tabItems .tabItem {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  color: var(--black);
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+
+.switchingTabs .tabItems .tabItem.active {
+  color: white;
+}
+
+.switchingTabs .tabItems .movingBg {
+  height: 30px;
+  width: 100px;
+  border-radius: 15px;
+  background-image: var(--gradient);
+  position: absolute;
+  left: 0;
+  -webkit-transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
+  transition: left cubic-bezier(0.88, -0.35, 0.565, 1.35) 0.4s;
+}
+/*# sourceMappingURL=style.css.map */
